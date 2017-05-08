@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Cadastro : EKKO </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="materialize.css">
+        <link rel="stylesheet"  href="custom.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script type="text/javascript" src="validar.js"> </script>
+    
+    </head>
+    <body>
+          <header>
+        <div  border class=" div1 card-panel #00838f cyan darken-3 z-depth-5  black-text">
+            <a class=" entrar btn black white-text entrar"  id="entrar_usu" name="entrar" href="http://127.0.0.1:49801/telacadastro/Teladecadastro.html" target="_blank">Entre ou Cadastre-se</a>
+            <div class="nav-wrapper">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" id="btn-sidebar">
+                            <i class="material-icons black-text">dehaze</i>
+                    </li>
+                </ul>
+            </div>
+              </div>
+        </header>
+
+           
+            <h1 id="titulodapaginadecadastro" class="white-text"> Cadastro </h1>
+              <form name="formCadastro"  action="">
+        <div class="row s2 ">
+            <div class="input-field col s2  " id="cad">
+                <p class="titulos white-text"> Nome*: </p>
+                <input type="text" name="txtNome" placeholder="Digite" class="inputsCad" id="nome" required pattern="[a-z\s]+$">
+                <p class="titulos white-text"> Sobrenome*: </p>
+                <input type="text" name="txtNome" placeholder="Sobrenome" class="inputsCad" id="sobrenome" required pattern="[a-z\s]+$">
+                
+                <p class="titulos white-text"> Celular*: </p>
+                <input type="tel" name="txtNum" placeholder="(__)____-____" class="inputsCad" id="tel" required pattern="^\d{7}-\d{4}$" title="Ex: 9299508-9076">
+                <p class="titulos white-text"> Email*: </p>
+                <input type="email" name="txtEmailCadastro" placeholder="Digite seu email" class="inputsCad" id="emailCadastro" required>
+                 </div>
+            <div class="input-field col s6 " id="cad3">
+                <p class="titulos white-text"> Confirme seu email*: </p>
+                <input type="email" name="txtEmailConfirm" placeholder="Confirme seu email" class="inputsCad" id="emailCom" required>
+                <p class="titulos white-text"> Senha*: </p>
+                <input type="password" name="txtSenhaCadastra" placeholder="Crie uma senha" class="inputsCad" id="senhaCadastra" required pattern=".{6,}" title="A senha deve conter no mínimo 6 caracteres" >
+                <p class="titulos white-text"> Repita a senha*: </p>
+                <input type="password" name="txtSenhaConfirm" placeholder="Confirme sua senha" class="inputsCad" id="senhaCom" required pattern=".{6,}" oninput="validaSenha()"  title=" A senha deve conter no mínimo 6 caracteres">
+                
+               <p style="color: White"> <p id="meuPa">Ao clicar em cadastrar você concorda com os nossos  </p>
+                <a href="www.google.com"> Termos de Uso </a>.</p>
+
+                <button class="btn waves-effect waves-light"  name="action" id="btnCad" onclick="validaSenhaCadastro();validaEmailCadastro();"> Confirmar </button> 
+              
+            </div>
+        </div>
+                 
+    </form>
+            
+    
+        </div>
+    
