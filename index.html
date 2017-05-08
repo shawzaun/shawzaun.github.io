@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> EKKO </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="materialize.css">
+        <link rel="stylesheet"  href="custom.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    </head>
+    <body>
+	<article>
+          <header>
+        <div border class=" div1 card-panel #00838f cyan darken-3 z-depth-5  black-text">
+            <a class=" entrar btn black white-text entrar" id="entrar_usu" name="entrar" href="http://127.0.0.1:49801/telacadastro/Teladecadastro.html" target="_blank">Entre ou Cadastre-se</a>
+            <div class="nav-wrapper" id="nav-wrapper">
+                <ul class="#nav-wrapper-ul">
+                    <li>
+                        <a href="javascript:void(0)" id="btn-sidebar">
+                            <i class="material-icons black-text">dehaze</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+	<div class="w3-content w3-display-container">
+		  <a href="file:///C:/Users/User/Desktop/ekko-shaw/ShowsEFestivais.html">
+		  <img class="mySlides" src="http://www.fundoswiki.com/Uploads/fundoswiki.com/ImagensGrandes/fundos-de-ecra-de-festas-1.jpg" style="width:100%; height:400px;"></a>
+		   <a href="file:///C:/Users/User/Desktop/ekko-shaw/Teatro.html">
+		  <img class="mySlides" src="http://linkmais.info/wp-content/uploads/2016/03/teatro.jpg" style="width:100%; height:400px;"></a>
+		  <a href="file:///C:/Users/User/Desktop/ekko-shaw/Festas.html">
+		  <img class="mySlides" src="https://i.ytimg.com/vi/HdhQljqFy4o/maxresdefault.jpg" style="width:100%; height:400px;"></a>
+		 <a href="file:///C:/Users/User/Desktop/ekko-shaw/maisProx.html">
+		  <img class="mySlides" src="http://sctdo.com/wp-content/uploads/2016/01/projeto-x-melhores-filmes-festas.jpg" style="width:100%; height:400px;"></a>
+
+		  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+
+	
+	
+
+		
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+	</script>
+	
+	<footer class=" #00838f cyan darken-3 ">
+        <center> <h3> Encontre os melhores eventos no EKKO:<br> A cultura mais próxima de você. </h3> </center>
+        <center> <p > Compartilhe os eventos e nos siga nas redes sociais <p> </p> </center>
+        <img src="redes2.png" width="10%" height="30%" id="imagemfooter">  
+	</footer>
+</article>
+</body>
+	
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script sr="js/materialize.js"></script> 
+</html>
