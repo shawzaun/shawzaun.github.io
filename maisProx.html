@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Eventos Próximos : EKKO </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="materialize.css">
+        <link rel="stylesheet"  href="custom.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+       
+    </head>
+    <body>
+         <!-- 
+            CRIANDO CABEÇALHO
+        -->
+           <header>
+        <div  border class=" div1 card-panel #00838f cyan darken-3 z-depth-5  black-text">
+            <a class=" entrar btn black white-text entrar"  id="entrar_usu" name="entrar" href="http://127.0.0.1:49801/telacadastro/Teladecadastro.html" target="_blank">Entre ou Cadastre-se</a>
+            <div class="nav-wrapper">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" id="btn-sidebar">
+                            <i class="material-icons black-text">dehaze</i>
+                    </li>
+                </ul>
+            </div>
+
+           
+        </div>
+		</header>
+
+              <center>
+            <H3 class="white-text">Procure eventos próximos a  você!</H3>
+            <button class=" btn #00838f cyan darken-3 btnLocal white-text"  name="local" id="local" onclick="getLocation()">Sua Localização</button>
+                  <div class=" divmaisProx" id="mapholder"></div></center>
+
+        <!-- 
+           CRIANDO A LISTA LATERAL
+        -->
+        
+    <div id="wrapper" class="toggled" >
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="http://127.0.0.1:49801/index.html">
+                        EKKO
+                    </a>
+                </li>
+                <li>
+                    <div>
+                         <i class=" material-icons white-text responsive center">perm_identity</i>
+                        <h5 class="white-text center" id="user-name"></h5>
+                    </div>
+                <li class="collection-item search-component">
+                    <form action="">
+                        <div class="input-field row search-field">
+                            <input type="text" name="search"  class="white-text"  style="padding:10px;">
+                            <label for="search">buscar</label>
+                            <button type="submit" class="btn #00838f cyan darken-3" black-text style="width:100%"><i class="material-icons">search</i></button>
+                         </div>
+                    </form>
+                </li>
+                <li class="indent">
+                    <a href="#">Eventos Desejados <i class="material-icons white-text indent">thumb_up</i></a>
+                </li>
+                <li class="indent">
+                    <a href="#">Eventos Comparecidos<i class="material-icons white-text indent">done</i></a>
+                </li>
+                <li>
+                    <a href="#">Pagamento<i class="material-icons white-text indent">class</i></a>
+                </li>
+                <li>
+                    <a href="#">Configurações<i class="material-icons white-text indent">settings</i></a>
+                </li>
+                <li>
+                    <a href="#">Ajuda<i class="material-icons white-text indent"new_releases</i></a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- 
+            USANDO API DO GOOGLE MAPS PARA USAR A LOCALIZACAO
+        -->
+    
+    
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+            
+            
+    <script>
+    var x=document.getElementById("demo");
+    function getLocation()
+      {
+      if (navigator.geolocation)
+        {
+        navigator.geolocation.getCurrentPosition(showPosition,showError);
+        }
+      else{x.innerHTML="Geolocalização não é suportada nesse browser.";}
+      }
+
+    function showPosition(position)
+      {
+      lat=position.coords.latitude;
+      lon=position.coords.longitude;
+      latlon=new google.maps.LatLng(lat, lon)
+      mapholder=document.getElementById('mapholder')
+      mapholder.style.height='700px';
+      mapholder.style.width='80%';
+
+      var myOptions={
+      center:latlon,zoom:14,
+      mapTypeId:google.maps.MapTypeId.ROADMAP,
+      mapTypeControl:false,
+      navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+      };
+      var map=new google.maps.Map(document.getElementById("mapholder"),myOptions);
+      var marker=new google.maps.Marker({position:latlon,map:map,title:"Você está Aqui!"});
+      }
+
+    function showError(error)
+      {
+      switch(error.code)
+        {
+        case error.PERMISSION_DENIED:
+          x.innerHTML="Usuário rejeitou a solicitação de Geolocalização."
+          break;
+        case error.POSITION_UNAVAILABLE:
+          x.innerHTML="Localização indisponível."
+          break;
+        case error.TIMEOUT:
+          x.innerHTML="O tempo da requisição expirou."
+          break;
+        case error.UNKNOWN_ERROR:
+          x.innerHTML="Algum erro desconhecido aconteceu."
+          break;
+        }
+      }
+    </script>
+        
+        
+        
+	
+</body>
+	
+</html>
