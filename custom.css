@@ -61,7 +61,7 @@ footer {
     width: 100%;
     bottom: 0%;
     height: 20%;
-    position: relative;
+    position: absolute;
     background-color: grey;
 }
 
@@ -1021,6 +1021,6 @@ img.configImg {
 .divIndex{
     width: 200%;
     height: 70%;
-    background-color: grey;
+    background-image: url("https://shawzaun.github.io/maisProxIndex.jpg");
     
 }
