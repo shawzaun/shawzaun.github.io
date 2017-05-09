@@ -61,8 +61,8 @@ footer {
     width: 100%;
     bottom: 0%;
     height: 20%;
-    position: fixed;
-    background-color: gainsboro;
+    position: relative;
+    background-color: grey;
 }
 
 nav {
