@@ -13,6 +13,7 @@ html {
 }
 
 
+
 /* Cabeçalho styles*/
 
 .div1 {
@@ -60,9 +61,8 @@ footer {
     margin: auto;
     width: 100%;
     bottom: 0%;
-    height: 20%;
+    height: 10%;
     position: absolute;
-    background-color: grey;
 }
 
 nav {
@@ -72,9 +72,19 @@ nav {
 }
 #imagemfooter{
     position: absolute;
-    top:75%;
-    left: 45%;
-}
+    top:145%;
+    left: 35%;
+}   
+#imagemfooter2{
+    position: absolute;
+    top:145%;
+    left: 52%;
+}   
+#imagemfooter3{
+    position: absolute;
+    top:145%;
+    left: 69%;
+}   
 
 
 /*AJUDA STYLES*/
@@ -154,7 +164,7 @@ sectionAjuda {
 
 #sidebar-wrapper {
     z-index: 1000;
-    position: fixed;
+    position: absolute;
     left: 250px;
     width: 0;
     height: 100%;
@@ -306,12 +316,19 @@ input.inputsCad {
 }
 
 #btnAlt {
-    left: 0%;
+    left: -100%;
+}
+#eu{
+   height: 10%;
+    width: 150%;
+    
 }
 
 #btnExc {
     left: 7%;
     background-color: darkgrey;
+    top: 43%;
+    position: absolute;
 }
 
 .titulos {
@@ -353,10 +370,11 @@ input.inputsCad {
 
 #cad4 {
     /* id do div pras informaçoes do ingresso */
-    position: relative;
+    position: absolute;
     height: 10%;
     left: 0%;
     width: 22%;
+    top: 19%;
 }
 
 #cad5 {
@@ -365,15 +383,14 @@ input.inputsCad {
     height: 20%;
     left: 27%;
     width: 22%;
-    top: 18%;
+    top: 20.7%;
 }
 
 #cad6 {
     /* configura o div do email da página pagamento de conta */
     position: absolute;
-    top: 0%;
     width: 50%;
-    top: 200px;
+    top: 33%;
 }
 
 p.titulodopagamento {
@@ -381,13 +398,13 @@ p.titulodopagamento {
     color: red;
     left: 0%;
     position: absolute;
-    top: 8%;
+    top: 12%;
 }
 
 p.titulodopagamento1 {
     font-size: 150%;
     color: black;
-    top: 59%;
+    top: 55%;
     position: absolute;
     left: 0%;
 }
@@ -433,7 +450,7 @@ section {
     width: 20%;
     left: 0%;
     position: absolute;
-    top: 75%;
+    top: 69%;
     background-color: #757575;
     height: 18%;
     border-radius: 3em 5em 3em 5em;
@@ -442,7 +459,7 @@ section {
     width: 20%;
     left: 20%;
     position: absolute;
-    top: 75%;
+    top: 69%;
     background-color: #757575;
     height: 18%;
     border-radius: 3em 5em 3em 5em;
@@ -463,7 +480,9 @@ body {
     margin: 0
 }
 .mySlides {
-    display: none
+    display:none;
+    opacity: 0.9;
+    
 }
 
 /* Slideshow container */
@@ -607,7 +626,7 @@ principal {
 .principal:hover .conteudo {
     background-color: transparent;
     bottom: 0;
-    color: black;
+    color: white;
 }
 #configinfoevento{
     top: 17%;
@@ -1017,10 +1036,141 @@ img.configImg {
 @media only screen and (max-width: 400px) {
   .prev, .next,.text {font-size: 14px}
 }
+#titulodeeventodesejado{
+    font-size: 250%;
+    color: black;
+    left: 35%;
+    top: 10%;
+    position: absolute;
+}
+div.contEventoDesejado{
+    height: 70%;
+    width: 18%;
+    top: -10%;
+    left: 40%;
+    background-color: #b2dfdb;
+    position: absolute;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #00838f;
+}
+div.contEventoDesejado2{
+    height: 70%;
+    width: 18%;
+    top: 90%;
+    left: 40%;
+    background-color: #b2dfdb;
+    position: absolute;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #00838f;
+}
+div.contEventoDesejado3{
+    height: 70%;
+    width: 18%;
+    top: 190%;
+    left: 40%;
+    background-color: #b2dfdb;
+    position: absolute;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #00838f;
+}
+div.contEventoDesejado4{
+    height: 70%;
+    width: 18%;
+    top: 290%;
+    left: 40%;
+    background-color: #b2dfdb;
+    position: absolute;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #00838f;
+}
+#coracao{
+    border-radius: 5em;
+    color: #00acc1 ;
+    top: 25%;
+    left: 60%;
+    position: absolute;
 
+}
+#coracao2{
+    border-radius: 5em;
+    color: #00acc1 ;
+    top: 45%;
+    left: 60%;
+    position: absolute;
+
+}
+#coracao3{
+    border-radius: 5em;
+    color: #00acc1 ;
+    top: 65%;
+    left: 60%;
+    position: absolute;
+
+}
+#coracao4{
+    border-radius: 5em;
+    color: #00acc1 ;
+    top: 85%;
+    left: 60%;
+    position: absolute;
+
+}
+/* Parei aqui */
+#cadLogin{
+   position: absolute;
+    left: 40%;
+    width: 20%;
+    top: 30%;
+}
+#titulodologin{
+    position: absolute;
+    left: 38%;
+    top: 20%;
+}
+#btnLogin{
+    position: absolute;
+    left: 30%;
+    top: 110%;
+}
+#configLogin{
+    position: absolute;
+    left: 5%;
+    top: 130%;
+    width: 100%;
+    font-size: 123%;
+    color: grey;
+}
+#configLogin2{
+    position: absolute;
+    left: 17%;
+    top: 160%;
+    width: 100%;
+    font-size: 123%;
+    color:darkgray;
+}
 .divIndex{
-    width: 200%;
-    height: 90%;
-    background-image: url("https://shawzaun.github.io/maisProxIndex.jpg");
+    width: 100%;
+    height: 70%;
+   
+}
+#configIndex{
+    position: absolute;
+    left: 24%;
+    top: 27%;
+}
+#configIndex2{
+    position: absolute;
+    left: 40%;
     
+}
+#iconeFace{
+    position: absolute;
+    top:145%;
+    left: 25%;
+    font-size: 100%;
+    color: white;
 }
