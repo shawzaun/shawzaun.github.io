@@ -1,126 +1,167 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title> EKKO </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  href="materialize.css">
-        <link rel="stylesheet"  href="custom.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
-    </head>
-    <body>
-	<article>
-          <header>
-        <div border class=" div1 card-panel #00838f cyan darken-3 z-depth-5  black-text">
-            <a class=" entrar btn black white-text entrar" id="entrar_usu" name="entrar" href="https://shawzaun.github.io/TelaDeCadastro.html" target="_blank">Entre ou Cadastre-se</a>
-            <div class="nav-wrapper" id="nav-wrapper">
-                <ul class="#nav-wrapper-ul">
-                    <li>
-                        <a href="javascript:void(0)" id="btn-sidebar">
-                            <i class="material-icons black-text">dehaze</i></a>
-                    </li>
-                </ul>
+
+<head>
+    <title> EKKO </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+    <article>
+        <header>
+            <div border class=" div1 card-panel #00838f cyan darken-3 z-depth-5  black-text">
+                <a class=" entrar btn black white-text entrar" id="entrar_usu" name="entrar" href="shawzaun.github.io/TelaDeCadastro.html" target="_blank">Entre ou Cadastre-se</a>
+                <div class="nav-wrapper" id="nav-wrapper">
+                    <ul class="#nav-wrapper-ul">
+                        <li>
+                            <a href="javascript:void(0)" id="btn-sidebar">
+                                <i class="material-icons black-text">dehaze</i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </header>
-		
-		 <!-- 
-           CRIANDO A LISTA LATERAL
-        -->
-        
-    <div id="wrapper"  >
+        </header>
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="http://127.0.0.1:49801/index.html">
-                        EKKO
-                    </a>
-                </li>
-                <li>
-                    <div>
-                         <i class=" material-icons white-text responsive center">perm_identity</i>
-                        <h5 class="white-text center" id="user-name"></h5>
-                    </div>
-                <li class="collection-item search-component">
-                    <form action="">
-                        <div class="input-field row search-field">
-                            <input type="text" name="search"  class="white-text"  style="padding:10px;">
-                            <label for="search">buscar</label>
-                            <button type="submit" class="btn #00838f cyan darken-3" black-text style="width:100%"><i class="material-icons">search</i></button>
-                         </div>
-                    </form>
-                </li>
-                <li class="indent">
-                    <a href="#">Eventos Desejados <i class="material-icons white-text indent">thumb_up</i></a>
-                </li>
-                <li class="indent">
-                    <a href="#">Eventos Comparecidos<i class="material-icons white-text indent">done</i></a>
-                </li>
-                <li>
-                    <a href="#">Pagamento<i class="material-icons white-text indent">class</i></a>
-                </li>
-                <li>
-                    <a href="#">Configurações<i class="material-icons white-text indent">settings</i></a>
-                </li>
-                <li>
-                    <a href="#">Ajuda<i class="material-icons white-text indent"new_releases</i></a>
-                </li>
-            </ul>
-        </div>
-	    
-	    <section class="divIndex">
-	    <section><h2 class="titulos" style="text-align: center;">Encontre os melhores eventos aqui!<br>Ekko, a cultura mais próxima de você.</h2></section>
-	<div class="w3-content w3-display-container">
-		<a href="https://shawzaun.github.io/maisProx.html">
-		  <img class="mySlides" src="https://shawzaun.github.io/maisProxIndex.jpg" id="maisproxindex" style="width:100%; height:400px;"></a>
-		  <a href="shawzaun.github.io/ShowsEFestivais.html">
-		  <img class="mySlides" src="https://shawzaun.github.io/showsEfestivaisindex.jpg" style="width:100%; height:400px;" id="showsefestivaisindex"></a>
-		   <a href="https://shawzaun.github.io/telaTeatro.html">
-		  <img class="mySlides" src="https://shawzaun.github.io/teatroIndex.jpg" id="teatroindex" style="width:100%; height:400px;"></a>
-		  <a href="l">
-		  <img class="mySlides" src="https://shawzaun.github.io/festasIndex.jpg" id="festasindex" style="width:100%; height:400px;"></a>
-	
-		  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-		  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-	</div>
-		    </section>
-	
-	
+        <section class="divIndex">
+            <section class="white-text center" style="font-family:baloo">
+                <h2 id="configIndex2">Encontre os melhores eventos aqui!<br> Ekko, a cultura mais proxima de você.</h2>
+            </section>
 
-		
-	<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
+            <div id="wrapper" class="toggled">
 
-		function plusDivs(n) {
-		  showDivs(slideIndex += n);
-		}
+                <!-- Sidebar -->
+                <div id="sidebar-wrapper">
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-brand">
+                        </li>
+                        <li>
+                            <div>
+                                <i class=" material-icons white-text responsive ">perm_identity</i>
+                                <h5 class="white-text center" id="user-name"></h5>
+                            </div>
 
-		function showDivs(n) {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  if (n > x.length) {slideIndex = 1}    
-		  if (n < 1) {slideIndex = x.length}
-		  for (i = 0; i < x.length; i++) {
-			 x[i].style.display = "none";  
-		  }
-		  x[slideIndex-1].style.display = "block";  
-		}
-	</script>
-	
-	<footer class=" #00838f cyan darken-3 ">
-        <center> <h3> Encontre os melhores eventos no EKKO:<br> A cultura mais próxima de você. </h3> </center>
-        <center> <p > Compartilhe os eventos e nos siga nas redes sociais <p> </p> </center>
-        <img src="redes2.png" width="10%" height="30%" id="imagemfooter">  
-	</footer>
-</article>
+                            <li class="indent">
+                                <a href="shawzaun.github.io/EventosDesejados.html">Eventos Desejados <i class="material-icons white-text indent">thumb_up</i></a>
+                            </li>
+                            <li class="indent">
+                                <a href="shawzaun.github.io/EventosComparecidos.html">Eventos Comparecidos<i class="material-icons white-text indent">done</i></a>
+                            </li>
+                            <li>
+                                <a href="shawzaun.github.io/Pagamento.html">Pagamento<i class="material-icons white-text indent">class</i></a>
+                            </li>
+                            <li>
+                                <a href="shawzaun.github.io/TelaAlteraDados.html">Alterar Dados<i class="material-icons white-text indent">settings</i></a>
+                            </li>
+                            <li>
+                                <a href="shawzaun.github.io/Ajuda.html">Ajuda<i class="material-icons white-text indent"new_releases</i></a>
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="w3-content w3-display-container" id="configIndex">
+                    <a href="shawzaun.github.io/ShowsEFestivais.html">
+                        <img class="mySlides" src="showsEfestivaisindex.jpg" style="width:100%; height:400px;"></a>
+
+                    <a href="shawzaun.github.io/telaTeatro.html">
+                        <img class="mySlides" src="teatroIndex.jpg"  style="width:100%; height:400px;" ></a>
+
+                    <a href="shawzaun.github.io/festas.html">
+                        <img class="mySlides" src="festasIndex.jpg" style="width:100%; height:400px;"></a>
+
+                    <a href="shawzaun.github.io/maisProx.html">
+                        <img class="mySlides" src="maisProxIndex.jpg" style="width:100%; height:400px;"></a>
+
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 6000); // Change image every 2 seconds
+            }
+
+        </script>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+
+        </script>
+
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+
+        </script>
+
+        <footer class="" style="left:10%">
+            <center>
+                <p style="top:10%;left:300%" class="white-text"> Compartilhe os eventos e nos siga nas redes sociais
+                 </p>
+            </center>
+            <img src="iconeFace.png" width="3%" height="70%" id="imagemfooter">
+              <img src="iconeTT.png" width="3%" height="70%" id="imagemfooter2">
+              <img src="iconeInsta.png" width="3%" height="70%" id="imagemfooter3">
+        </footer>
+    </article>
 </body>
-	
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script sr="js/materialize.js"></script> 
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script sr="js/materialize.js"></script>
+
 </html>
