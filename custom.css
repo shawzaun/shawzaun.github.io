@@ -1017,3 +1017,10 @@ img.configImg {
 @media only screen and (max-width: 400px) {
   .prev, .next,.text {font-size: 14px}
 }
+
+.divIndex{
+    width: 100%;
+    height: 70%;
+    background-color: grey;
+    
+}
