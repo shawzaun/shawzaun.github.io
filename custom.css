@@ -1,15 +1,16 @@
 /* Definindo bg e fonte do site*/
 
 html {
-    font-family: arial
+    font-family: monospace;
+}
+
+h1, h2, h3, h4, h4, p, a, input, placehorder {
+    font-family: monospace;
+    color: black;
 }
 
 html {
-    font-weight: 100
-}
-
-html {
-    background-image: url("http://iospace.es/wp-content/uploads/2017/01/geo-shapes-black-1280b.jpg")
+    background-color: #b2dfdb;
 }
 
 
@@ -18,7 +19,9 @@ html {
 
 .div1 {
     width: 100%;
-    height: 60px;
+    height: 130px;
+    background-image:url(fundo.jpg);
+    margin-top: 0%;
 }
 
 .div2 {
@@ -33,7 +36,7 @@ html {
     position: relative;
     float: right;
     rigth: -10%;
-    top: -09px;
+    top: 15px;
     width: px;
     border-radius: 5em 5em 5em 5em;
     font-size: 12px;
@@ -41,8 +44,6 @@ html {
 
 .absolute {
     position: absolute;
-    top: 70px;
-    right: 0;
     width: 200px;
     height: 200px;
 }
@@ -56,7 +57,39 @@ html {
     width: 30%;
     height: auto;
 }
+#pesq{
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    color: black;
+    top: 2%;
+    border-radius: 16px;
+    right: 4%;
+}
+#pesq1{
+    position: absolute;
+    width: 90%;
+    height: 15%;
+    color: black;
+    top: 5%;
+    left: 4%;
+    
+}
 
+#iconepesq{
+    position: absolute;
+    right: 2%;
+    top: 5%;    
+}
+#usuario{
+    position: absolute;
+    left: 1%;
+}
+#nomeusuario{
+    position: absolute;
+    left: 5%;
+    
+}
 footer {
     margin: auto;
     width: 100%;
@@ -91,14 +124,19 @@ nav {
 
 sectionAjuda {
     margin: auto;
+    position: absolute;
+    width: 39%;
 }
-
-.pesqAjuda {
-    position: relative;
-    top: 30px;
+#ajuda2{
+    position: absolute;
+    width: 60%;
+}
+#Pesqajuda {
+    position: absolute;
+    top: 70%;
     width: 50%;
     font-size: 12px;
-    margin-left: 20%;
+    left: 25%;
 }
 
 .linksGerais {
@@ -130,6 +168,18 @@ sectionAjuda {
 
 #divAjuda {
     margin-left: 20%;
+    width: 39%;
+    background-color: #607d8b;
+    margin-top: 5%;
+    
+}
+#tituloajuda{
+    position: absolute;
+    left: 45%;
+    top: 18%;
+    color: black;
+    font-family: monospace;
+    font-size: 250%;
 }
 
 .btnLocal {
@@ -175,7 +225,7 @@ sectionAjuda {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    top: 69px;
+    
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -190,12 +240,11 @@ sectionAjuda {
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
 }
 
 #sidebar-wrapper i.material-icons.right {
     margin-top: 12px;
-    margin-right: 18px;
+    
     font-size: 8px;
 }
 
@@ -207,7 +256,7 @@ sectionAjuda {
 }
 
 #btn-sidebar.toggled {
-    margin-left: 300px;
+    
 }
 
 
@@ -309,6 +358,10 @@ input.inputsCad {
     transition: .25s;
     margin-left: 0px;
     color: black;
+    
+}
+::placeholder{
+    color: black;
 }
 
 #btnCad {
@@ -338,6 +391,13 @@ input.inputsCad {
     color: black;
     margin: 0%;
 }
+#logo{
+    position: absolute;
+    left: 45%;
+    height: 20%;
+    top: 0%;
+}
+
 
 #cad3 {
     position: absolute;
@@ -353,7 +413,7 @@ input.inputsCad {
 }
 
 #meuPa {
-    color: white;
+    color: black;
 }
 
 #ImgLinks {
@@ -367,6 +427,60 @@ input.inputsCad {
     height: 10%;
     top: 10%;
 }
+#nomeevento{
+    position: absolute;
+    left: 23%;
+    
+}
+#configeventolocal{
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    font-size: 25px;
+}
+#configeventolocal1{
+    position: absolute;
+    left: 32%;
+    top: 37%;
+    font-size: 20px;
+}
+#configeventodata{
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    font-size: 25px;
+}
+#configeventodata1{
+    position: absolute;
+    left: 32%;
+    top: 47%;
+    font-size: 20px;
+}
+#configeventopreco{
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    font-size: 25px;
+}
+#configeventopreco1{
+    position: absolute;
+    left: 33%;
+    top: 56%;
+    font-size: 20px;
+}
+
+#configeventodes{
+      position: absolute;
+    left: 25%;
+    top: 69%;
+    font-size: 25px;
+}
+#configeventodes1{
+      position: absolute;
+    left: 35%;
+    top: 69%;
+    font-size: 25px;
+}
 
 #cad4 {
     /* id do div pras informaçoes do ingresso */
@@ -374,7 +488,7 @@ input.inputsCad {
     height: 10%;
     left: 0%;
     width: 22%;
-    top: 19%;
+    top: 26%;
 }
 
 #cad5 {
@@ -383,28 +497,27 @@ input.inputsCad {
     height: 20%;
     left: 27%;
     width: 22%;
-    top: 20.7%;
+    top: 28%;
 }
 
 #cad6 {
     /* configura o div do email da página pagamento de conta */
     position: absolute;
     width: 50%;
-    top: 33%;
+    top: 40%;
 }
 
 p.titulodopagamento {
     font-size: 150%;
-    color: red;
     left: 0%;
     position: absolute;
-    top: 12%;
+    top: 19%;
 }
 
 p.titulodopagamento1 {
     font-size: 150%;
     color: black;
-    top: 55%;
+    top: 64%;
     position: absolute;
     left: 0%;
 }
@@ -450,7 +563,7 @@ section {
     width: 20%;
     left: 0%;
     position: absolute;
-    top: 69%;
+    top: 75%;
     background-color: #757575;
     height: 18%;
     border-radius: 3em 5em 3em 5em;
@@ -459,7 +572,7 @@ section {
     width: 20%;
     left: 20%;
     position: absolute;
-    top: 69%;
+    top: 75%;
     background-color: #757575;
     height: 18%;
     border-radius: 3em 5em 3em 5em;
@@ -633,6 +746,11 @@ principal {
     left: 60%;
     position: absolute;
     
+    
+}
+#infoevento{
+    position: absolute;
+    top: 29%;
 }
 #configinfoevento1{
     top: 5%;
@@ -640,10 +758,10 @@ principal {
     position: absolute;
     font-size: 200%;
 }
-#descricaodoevento{
+#descricaoevento{
     position: absolute;
-    left: 0%;
-    top: 15%;
+   top: 60%;
+    left: 50%;
 }
 
 /* tá configurando o select de pagamento, a vista e juros */
@@ -774,10 +892,18 @@ center{
 }
 #titulodapaginateatro {
     /* título da página de Teatro */
-    font-size: 250%;
+    font-size: 350%;
     color: black;
-    text-align: left;
-    top: 9%;
+    left: 38%;
+    top: 15%;
+    position: absolute;
+}
+#titulodapaginafesta {
+    /* título da página de Teatro */
+    font-size: 350%;
+    color: black;
+    left: 45%;
+    top: 15%;
     position: absolute;
 }
 div.teatro1 {
@@ -785,7 +911,7 @@ div.teatro1 {
     left: 0%;
     height: 20%;
     font-size: 90px;
-    top: 24%;
+    top: 30%;
     width: 100%;
 }
 
@@ -809,9 +935,9 @@ div.teatro3 {
 
 div.cont {
     height: 105%;
-    width: 22%;
+    width: 28%;
     top: 0%;
-    background-color: #b2dfdb;
+    background-color: #4db6ac;
     position: absolute;
     border-bottom-width: 3px;
     border-bottom-style: solid;
@@ -820,11 +946,11 @@ div.cont {
 
 div.cont1 {
     height: 105%;
-    width: 22%;
+    width: 28%;
     top: 0%;
-    background-color:  #b2dfdb ;
+    background-color:#4db6ac ;
     position: absolute;
-    left: 25%;
+    left: 35%;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: #00838f;
@@ -832,11 +958,11 @@ div.cont1 {
 
 div.cont2 {
     height: 105%;
-    width: 22%;
+    width: 28%;
     top: 0%;
-    background-color: #b2dfdb;
+    background-color: #4db6ac;
     position: absolute;
-    left: 50%;
+    left: 70%;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: #00838f;
@@ -844,9 +970,9 @@ div.cont2 {
 
 div.cont3 {
     height: 105%;
-    width: 22%;
+    width: 28%;
     top: 0%;
-    background-color: #b2dfdb;
+    background-color: #4db6ac;
     position: absolute;
     left: 75%;
     border-bottom-width: 3px;
@@ -857,58 +983,58 @@ div.cont3 {
 p.confignomepeca {
     position: absolute;
     font-family: "Arial";
-    font-size: 22%;
+    font-size: 24%;
     color: black;
     font-weight: bold;
     left: 35%;
-    top: -17%;
+    top: -19%;
+    
 }
 
 i.iconedata {
     position: absolute;
     left: 35%;
-    top: 24%;
+    top: 25%;
     color: black;
 }
-
 p.nomedata {
     position: absolute;
     font-family: "Arial";
-    font-size: 18%;
+    font-size: 20%;
     color: black;
     font-weight: bold;
     left: 42%;
-    top: 11%;
+    top: 10%;
 }
 
 i.iconehora {
     position: absolute;
     left: 70%;
-    top: 24%;
+    top: 25%;
     color: black;
 }
 
 p.nomehora {
     position: absolute;
     font-family: "Arial";
-    font-size: 18%;
+    font-size: 20%;
     color: black;
     font-weight: bold;
     left: 78%;
-    top: 11%;
+    top: 10%;
 }
 
 i.iconelocal {
     position: absolute;
     left: 35%;
-    top: 47%;
+    top: 50%;
     color: black;
 }
 
 p.nomelocal {
     position: absolute;
     font-family: "Arial";
-    font-size: 18%;
+    font-size: 20%;
     color: black;
     font-weight: bold;
     left: 42%;
@@ -918,11 +1044,11 @@ p.nomelocal {
 a.compraingressonome {
     position: absolute;
     font-family: "Arial";
-    font-size: 18%;
-    color: #03a9f4;
+    font-size: 24%;
+    color:#607d8b;
     font-weight: bold;
-    left: 39%;
-    top: 71%;
+    left: 44%;
+    top: 78%;
 }
 img.configImg {
     width: 35%;
@@ -1040,48 +1166,48 @@ img.configImg {
     font-size: 250%;
     color: black;
     left: 35%;
-    top: 10%;
+    top: 15%;
     position: absolute;
 }
 div.contEventoDesejado{
-    height: 70%;
-    width: 18%;
-    top: -10%;
-    left: 40%;
-    background-color: #b2dfdb;
+    height: 90%;
+    width: 29%;
+    top: 10%;
+    left: 35%;
+    background-color: #4db6ac;
     position: absolute;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: #00838f;
 }
 div.contEventoDesejado2{
-    height: 70%;
-    width: 18%;
-    top: 90%;
-    left: 40%;
-    background-color: #b2dfdb;
+    height: 90%;
+    width: 29%;
+    top: 120%;
+    left: 35%;
+    background-color: #4db6ac;
     position: absolute;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: #00838f;
 }
 div.contEventoDesejado3{
-    height: 70%;
-    width: 18%;
-    top: 190%;
-    left: 40%;
-    background-color: #b2dfdb;
+    height: 90%;
+    width: 29%;
+    top: 230%;
+    left: 35%;
+    background-color: #4db6ac;
     position: absolute;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: #00838f;
 }
 div.contEventoDesejado4{
-    height: 70%;
-    width: 18%;
+    height: 90%;
+    width: 29%;
     top: 290%;
     left: 40%;
-    background-color: #b2dfdb;
+    background-color: #4db6ac;
     position: absolute;
     border-bottom-width: 3px;
     border-bottom-style: solid;
@@ -1090,24 +1216,24 @@ div.contEventoDesejado4{
 #coracao{
     border-radius: 5em;
     color: #00acc1 ;
-    top: 25%;
-    left: 60%;
+    top: 37%;
+    left: 70%;
     position: absolute;
 
 }
 #coracao2{
     border-radius: 5em;
     color: #00acc1 ;
-    top: 45%;
-    left: 60%;
+    top: 60%;
+    left: 70%;
     position: absolute;
 
 }
 #coracao3{
     border-radius: 5em;
     color: #00acc1 ;
-    top: 65%;
-    left: 60%;
+    top: 82%;
+    left: 70%;
     position: absolute;
 
 }
@@ -1140,7 +1266,7 @@ div.contEventoDesejado4{
     position: absolute;
     left: 5%;
     top: 130%;
-    width: 100%;
+    width: 110%;
     font-size: 123%;
     color: grey;
 }
@@ -1148,7 +1274,7 @@ div.contEventoDesejado4{
     position: absolute;
     left: 17%;
     top: 160%;
-    width: 100%;
+    width: 110%;
     font-size: 123%;
     color:darkgray;
 }
@@ -1173,4 +1299,101 @@ div.contEventoDesejado4{
     left: 25%;
     font-size: 100%;
     color: white;
+}
+#semconteudo{
+    color:darkgray;
+    top: 30%;
+    position: absolute;
+    left: 20%;
+}
+#iconesemconteudo{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    height: 25%;
+    width: 15%;
+   
+}
+/*Teste*/
+.sectionPgInicial{
+		width:100%;
+		height:400px;
+		top: -50px;
+}
+#w3-display-container{
+top:09px;
+width:80%;
+height:400%;
+}
+
+#divQuemsomos1{
+	width:50%;
+	height:18.5%;
+    background-image:url(fundo.jpg);
+    position: absolute;
+    text-align: center;
+    
+
+}
+#boleto1{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+#tituloformadepagamento{
+    position: absolute;
+    left: 37%;
+    font-size: 180%;
+    font-family:monospace;
+    top: 5%;
+}
+#titulocontato1{
+    position: relative;
+    left: 0%;
+    font-size: 180%;
+    font-family:monospace;
+    top: 5%; 
+}
+h3.tt{
+    position: absolute;
+    left: 75%;
+    font-size: 180%;
+    font-family:monospace;
+    top: 148%; 
+}
+#email1{
+     position: absolute;
+    left: 75%;
+    font-size: 140%;
+    font-family:monospace;
+    top: 150%;
+}
+#email2{
+     position: absolute;
+    left: 75%;
+    font-size: 140%;
+    font-family:monospace;
+    top: 155%;
+}
+
+#ajuda1{
+    position: absolute;
+    top: 30%;
+}
+
+
+#divQuemsomos2{
+	width:50%;
+	height:60%;
+        background-image:url(fundo.jpg);
+}
+
+#divQuemsomos3{
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    margin-top: 8%;
+    text-align: center;
+    font-size: 14px;
+    background-color: #00695c;
 }
