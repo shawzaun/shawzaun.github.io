@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> EKKO </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .dropbtn {
+            background-color: #004d40;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            top: 8%;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f5f5f5;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #00897b
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #0097a7
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div border class=" div1 card-panel  z-depth-5  black-text">
+            <a href="Pagina%20Inicial.html"> <img src="logo6.png" id="logo"> </a>
+            <p id="nomeusuario"> Olá, Marilene </p>
+            <div class="dropdown" id="usuario">
+                <i class="dropbtn  material-icons">perm_identity</i>
+
+                <div class="dropdown-content">
+                    <a href="#">Eventos Desejados</a>
+                    <a href="#">Eventos Comparecidos</a>
+                    <a href="#">Alterar Dados</a>
+                    <a href="#"> Ajuda </a>
+                    <a href="#"> Sair da conta </a>
+                </div>
+            </div>
+
+            <!-- <a class=" entrar btn black white-text " id="entrar_usu" name="entrar"   target="_blank" >   <i class="material-icons ">perm_identity</i> </a> -->
+
+            <input type="search" class="inputsCad" placeholder="Pesquisar" id="pesq">
+            <i class="material-icons " id="iconepesq">search</i>
+
+    </header>
+    <h1> Informações sobre o evento </h1>
+    <h2 id="nomeevento"><b> After X: A melhor festa de todas </b></h2>
+    <img src="festas.jpg" width="20%" height="70%" id="infoevento">
+    <div>
+        <p id="configeventolocal"><b> Local: </b></p>
+        <p id="configeventolocal1"> Av. Itaúba, Próximo ao Zezão. 345, Bairro: Jorge Texeira. Manaus-Amazonas
+    </div>
+        <p id="configeventodata"><b> Data: </b></p>
+        <p id="configeventodata1"> Dia 27 de Janeiro de 2020, Às 23:00 </p>
+        <p id="configeventopreco"><b> Preços: </b></p>
+        <p id="configeventopreco1"> 1ºLote: R$ 100,00  <BR> 2ºlote: R$ 150,00</p>
+        <p id="configeventodes"><b> Descrição: </b></p>
+        <p id="configeventodes1"> Por essa vocês não esperavam, a melhor festas de todos os tempos. Bebida Liberada até 01:00 da manhã. Tinta neon,muita catuaba. Com os os melhores Djs de Manaus, com a presença ilustre de Steve Aoki. </p> 
+
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 6000); // Change image every 2 seconds
+            }
+
+        </script>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+
+        </script>
+</body>
+
+</html>
