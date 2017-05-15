@@ -1,198 +1,96 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title> EKKO </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  href="materialize.css">
-        <link rel="stylesheet"  href="custom.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
-    </head>
-    <body>
-	<article>
-          <header>
-        <div border class=" div1 card-panel #00838f cyan darken-3 z-depth-5  black-text">
-            <a class=" entrar btn black white-text entrar" id="entrar_usu" name="entrar" href="https://shawzaun.github.io/TelaDeCadastro.html" target="_blank">Entre ou Cadastre-se</a>
-            <div class="nav-wrapper" id="nav-wrapper">
-                <ul class="#nav-wrapper-ul">
-                    <li>
-                        <a href="javascript:void(0)" id="btn-sidebar">
-                            <i class="material-icons black-text">dehaze</i></a>
-                    </li>
-                </ul>
+
+<head>
+    <title> Teatro: EKKO </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+        .dropbtn {
+            background-color:#004d40;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            top: 8%;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:#f5f5f5;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #00897b
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #0097a7
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div border class=" div1 card-panel  z-depth-5  black-text">
+            <a href="Pagina%20Inicial.html"> <img src="logo6.png" id="logo"> </a>
+             <p id="nomeusuario"> Olá, Marilene </p>
+            <div class="dropdown" id="usuario">
+                <i class="dropbtn  material-icons">perm_identity</i>
+               
+                <div class="dropdown-content">
+                    <a href="#">Eventos Desejados</a>
+                    <a href="#">Eventos Comparecidos</a>
+                    <a href="#">Alterar Dados</a>
+                    <a href="#"> Ajuda </a>
+                    <a href="#"> Sair da conta </a>
+                </div>
             </div>
-        </div>
+
+            <!-- <a class=" entrar btn black white-text " id="entrar_usu" name="entrar"   target="_blank" >   <i class="material-icons ">perm_identity</i> </a> -->
+
+                <input type="search" class="inputsCad" placeholder="Pesquisar" id="pesq">
+                <i class="material-icons " id="iconepesq">search</i>
+
     </header>
+       
 
 
+    <h1 id="titulodapaginateatro" class="black-text"> Peças de Teatro </h1>
+    <h3 id=semconteudo> Não foram encontrados eventos disponíveis </h3>
+    <img  id="iconesemconteudo" src="iconesemconteudo.png">
 
 
-    <h1 id="titulodapaginateatro"> Peças de Teatro </h1>
-    <div class="teatro1 ">
-        <div class="cont card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont1 card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont2 card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont3 card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont4">
-
-        </div>
-
-
-    </div>
-    <div class="teatro2 ">
-        <div class="cont card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont1 card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont2 card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont3 card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont4">
-
-        </div>
-
-
-    </div>
-    <div class="teatro3 ">
-        <div class="cont card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont1 card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont2 card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-        <div class="cont3 card-panel">
-            <img src="teatro.jpg" class="configImg">
-            <p class="confignomepeca"> Nome da Peça </p>
-            <i class="material-icons iconedata">today </i>
-            <p class="nomedata"> 18/09/2016 </p>
-            <i class="material-icons iconehora">query_builder </i>
-            <p class="nomehora"> 20:00hrs </p>
-            <i class="material-icons iconelocal">room </i>
-            <p class="nomelocal"> Shopping Studio5 </p>
-            <a href="shawzaun.github.io/Pagamento.html" class="compraingressonome"> Comprar Ingressos </a>
-
-        </div>
-
-
-
-    </div>
+    
     </header>
 </body>
