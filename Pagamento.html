@@ -9,25 +9,83 @@
     <link rel="stylesheet" href="materialize.css">
     <link rel="stylesheet" href="custom.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+        .dropbtn {
+            background-color:#004d40;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            top: 8%;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:#f5f5f5;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #00897b
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #0097a7
+        }
+
+    </style>
+
 
 </head>
 
 <body>
-    <header>
-        <div border class=" div1 card-panel #00838f cyan darken-3 z-depth-5  black-text">
-            <a class=" entrar btn black white-text entrar" id="entrar_usu" name="entrar"b href="shawzaun.github.io/TelaDeCadastro.html" target="_blank">Entre ou Cadastre-se</a>
-            <div class="nav-wrapper" id="nav-wrapper">
-                <ul class="#nav-wrapper-ul">
-                    <li>
-                        <a href="javascript:void(0)" id="btn-sidebar">
-                            <i class="material-icons black-text">dehaze</i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
 
-    <p class="titulodopagamento white-text "> Informações do Ingresso Nº1 </p><br>
+    <header>
+        <div border class=" div1 card-panel  z-depth-5  black-text">
+            <a href="Pagina%20Inicial.html"> <img src="logo6.png" id="logo"> </a>
+             <p id="nomeusuario"> Olá, Marilene </p>
+            <div class="dropdown" id="usuario">
+                <i class="dropbtn  material-icons">perm_identity</i>
+               
+                <div class="dropdown-content">
+                    <a href="#">Eventos Desejados</a>
+                    <a href="#">Eventos Comparecidos</a>
+                    <a href="#">Alterar Dados</a>
+                    <a href="#"> Ajuda </a>
+                    <a href="#"> Sair da conta </a>
+                </div>
+            </div>
+
+            <!-- <a class=" entrar btn black white-text " id="entrar_usu" name="entrar"   target="_blank" >   <i class="material-icons ">perm_identity</i> </a> -->
+
+                <input type="search" class="inputsCad" placeholder="Pesquisar" id="pesq">
+                <i class="material-icons " id="iconepesq">search</i>
+
+    </header>
+       
+    <p class="titulodopagamento black-text "> Informações do Ingresso Nº1 </p><br>
+           
     <!--<div id="configqtdingresso"> 
         <form>
   <input type="number"   class="inputsCad" name="quantity" min="1" max="5">
@@ -37,18 +95,18 @@
     <form name="formCadastro" method="post" action="" id="cadForm">
         <div class="row">
             <div class="input-field col s1  " id="cad4">
-                <p class="titulos white-text"> Nome*: </p>
+                <p class="titulos "> Nome*: </p>
                 <input type="text" name="txtNome" placeholder="Digite o nome" class="inputsCad" id="nome" required pattern="[a-z\s]+$">
             </div>
 
             <div id="cad5">
-                <p class="titulos white-text"> Sobrenome*: </p>
+                <p class="titulos "> Sobrenome*: </p>
                 <input type="text" name="txtNome" placeholder="Digite o sobrenome" class="inputsCad" id="nome" required pattern="[a-z\s]+$">
             </div>
 
 
             <div class="input-field col s12  " id="cad6">
-                <p class="titulos white-text"> Email*:
+                <p class="titulos "> Email*:
                     <p style="color:green"> Obs: O ingresso será enviado para esse email após a confirmação do pagamento </p>
                     <input type="text" name="txtNome" placeholder="Digite o email" class="inputsCad" id="nome" required pattern="[a-z\s]+$">
                     <hr>
@@ -57,7 +115,7 @@
     </form>
 
     <form class="">
-        <p class="titulodopagamento1 white-text "> Informações do Pagamento </p><br>
+        <p class="titulodopagamento1  "> Informações do Pagamento </p><br>
         <div id="idboleto" class="card-panel">
             <center>Boleto<br>
                 <input type="radio" id="boleto" class="filled-in" />
@@ -83,7 +141,7 @@
     <section class="sectionFrPagamento">
         <form name="frPagamento" id="frPagamento">
             <div id="configPagamento">
-                <p class="titulos white-text"> Parcelamento*: </p>
+                <p class="titulos "> Parcelamento*: </p>
                 <select class="configuraselect">
                     <option value="Parcelamento">À vista</option>
                     <option value="juros">2x R$50,00</option>
@@ -93,9 +151,9 @@
                    </select>
             </div>
             <div id="configuracartaodecredito">
-                <p class="titulos white-text"> Cartão de crédito*: </p>
+                <p class="titulos "> Cartão de crédito*: </p>
                 <select class="configuraselect1">
-                         <p class="titulos white-text"> Cartao de Credito*: </p>
+                         <p class="titulos "> Cartao de Credito*: </p>
                         <option value="Visa">Visa</option>
                         <option value="Bradesco">MasterCard</option>
                         <option value="Mastercard">Elo</option>
@@ -104,14 +162,14 @@
                     </select>
             </div>
             <div id="configuranumcartao">
-                <p class=" titulos white-text">Numero do cartao*:</p>
+                <p class=" titulos ">Numero do cartao*:</p>
                 <input type="text" name="numCartao" placeholder="Digite o numero do cartão" class="inputsCad" id="numCartao" required>
             </div>
 
             <div id="configuradataexpedicao">
-                <p class="titulos white-text"> Data de Expiração*: </p>
+                <p class="titulos "> Data de Expiração*: </p>
                 <select class="" required>
-                         <p class="titulos white-text"> Ano:*</p>
+                         <p class="titulos "> Ano:*</p>
                         <option value="Visa" >Mês</option>
                         <option value="Bradesco">01</option>
                         <option value="Mastercard">02</option>
@@ -129,7 +187,7 @@
             </div>
             <div id="configuradataexpedicao1">
                 <select class="" required>
-                         <p class="titulos white-text"> Ano:*</p>
+                         <p class="titulos "> Ano:*</p>
                         <option value="Visa">Ano</option>
                         <option value="Bradesco">2017</option>
                         <option value="Mastercard">2018</option>
@@ -142,61 +200,56 @@
                     </select>
             </div>
             <div id="configcodsegure">
-                <p class=" titulos white-text">Código de segurança*:</p>
+                <p class=" titulos ">Código de segurança*:</p>
                 <input type="text" name="numCartao" placeholder="Digite o código de segurança" class="inputsCad" id="numCartao" required>
             </div>
 
             <form class="">
-                <p class="titulodopagamento2 white-text "> Dados do Titular do Cartão </p><br>
+                <p class="titulodopagamento2  "> Dados do Titular do Cartão </p><br>
 
                 <div id="confignometitular">
-                    <p class="titulos white-text">Nome*:</p>
+                    <p class="titulos ">Nome*:</p>
                     <input type="text" name="nomeTitular" placeholder="Digite o nome expresso no cartão" class="inputsCad" id="nomeTitular">
                 </div>
 
                 <div id="configdataNasc">
-                    <p class="titulos white-text">Data de Nascimento*:</p>
+                    <p class="titulos ">Data de Nascimento*:</p>
                     <input type="text" name="pdtNasci" placeholder="Digite a data de Nascimento" class="inputsCad" id="pdtNasci">
                 </div>
 
                 <div id="configCPFtitular">
-                    <p class="titulos white-text">CPF*:</p>
+                    <p class="titulos ">CPF*:</p>
                     <input type="text" name="cpfPag" placeholder="Digite o CPF" class="inputsCad" id="cpfPag">
                 </div>
 
                 <div id="configcelulartitular">
-                    <p class="titulos white-text"> Celular*: </p>
+                    <p class="titulos "> Celular*: </p>
                     <input type="tel" name="telefPag" placeholder="(__)____-____" class="inputsCad" id="telefPag" required pattern="^\d{7}-\d{4}$" title="Ex: 9299508-9076">
                 </div>
 
                 <div id="configCEP">
-                    <p class="titulos white-text">CEP*:</p>
+                    <p class="titulos ">CEP*:</p>
                     <input type="text" name="cepPag" placeholder="CEP" class="inputsCad" id="cepPag" required pattern="^\d{7}-\d{4}$">
                 </div>
-                <p id="titulodopagamento3"> Informações referentes ao Boleto </p>
+                <p id="titulodopagamento3" class=" black-text"> Informações referentes ao Boleto </p>
                 <div id="confignomeboleto">
-                    <p class="titulos white-text">Gerar Boleto em nome de*:</p>
+                    <p class="titulos ">Gerar Boleto em nome de*:</p>
                     <input type="text" name="NomeGerar" placeholder="Digite o nome que constará no boleto" class="inputsCad" id="NomeGerar" required pattern="^\d{7}-\d{4}$">
                 </div>
                 <div id="configCPFboleto">
-                    <p class="titulos white-text">CPF*:</p>
+                    <p class="titulos ">CPF*:</p>
                     <input type="text" name="NomeGerar" placeholder="Digite o CPF  que constará no boleto" class="inputsCad" id="NomeGerar" required pattern="^\d{7}-\d{4}$">
                 </div>
                 <div id="configCEPboleto">
-                    <p class="titulos white-text">CEP*:</p>
-                    <input type="text" name="NomeGerar" placeholder="Digte" class="inputsCad" id="NomeGerar" required pattern="^\d{7}-\d{4}$">
+                    <p class="titulos ">CEP*:</p>
+                    <input type="text" name="NomeGerar" placeholder="Digite seu CEP" class="inputsCad" id="NomeGerar" required pattern="^\d{7}-\d{4}$">
                 </div>
                 <a class="btn" id="configbtncontinuar">Continuar</a>
             </form>
         </form>
     </section>
     <div class="principal">
-        <p id="configinfoevento1" class="white-text"> Informações sobre o evento </p>
-        <img src="teatro.jpg" width="15%" height="25%" id="configinfoevento">
-        <div class="conteudo">
-            <p id="descricaodoevento" class=""> Este evento vai ter o horário tal, no lugar tal, sendo os participantes: aaaaa, aaaaa, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <br> Preços: ---------------------
-
-            </p>
+       
 
         </div>
     </div>
