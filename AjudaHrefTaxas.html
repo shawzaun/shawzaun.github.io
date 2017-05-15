@@ -2,45 +2,108 @@
 
 <html>
     <head>
-        <title> EKKO </title>
+        <title>Suporte : EKKO </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"  href="materialize.css">
         <link rel="stylesheet"  href="custom.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
-    </head>
-    <body>
-	<article>
-          <header>
-        <div border class=" div1 card-panel #00838f cyan darken-3 z-depth-5  black-text">
-            <a class=" entrar btn black white-text entrar" id="entrar_usu" name="entrar" href="https://shawzaun.github.io/TelaDeCadastro.html" target="_blank">Entre ou Cadastre-se</a>
-            <div class="nav-wrapper" id="nav-wrapper">
-                <ul class="#nav-wrapper-ul">
-                    <li>
-                        <a href="javascript:void(0)" id="btn-sidebar">
-                            <i class="material-icons black-text">dehaze</i></a>
-                    </li>
-                </ul>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <style>
+        .dropbtn {
+            background-color:#004d40;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            top: 8%;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:#f5f5f5;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #00897b
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #0097a7
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div border class=" div1 card-panel  z-depth-5  black-text">
+            <a href="Pagina%20Inicial.html"> <img src="logo6.png" id="logo"> </a>
+             <p id="nomeusuario"> Olá, Marilene </p>
+            <div class="dropdown" id="usuario">
+                <i class="dropbtn  material-icons">perm_identity</i>
+               
+                <div class="dropdown-content">
+                    <a href="#">Eventos Desejados</a>
+                    <a href="#">Eventos Comparecidos</a>
+                    <a href="#">Alterar Dados</a>
+                    <a href="#"> Ajuda </a>
+                    <a href="#"> Sair da conta </a>
+                </div>
             </div>
-        </div>
+
+            <!-- <a class=" entrar btn black white-text " id="entrar_usu" name="entrar"   target="_blank" >   <i class="material-icons ">perm_identity</i> </a> -->
+
+                <input type="search" class="inputsCad" placeholder="Pesquisar" id="pesq">
+                <i class="material-icons " id="iconepesq">search</i>
+
     </header>
+
+        
+  
 		
 		
 		  <section class="sectionAjuda">
-                <div class="row s12 pesqAjuda black card-panel  z-depth-5">     
-                    <div class="center input-field col s6 black card-panel z-depth-5" id="divAjuda">
+              <p id="tituloajuda" class="titulos"> AJUDA </p>
+                    <div class="input-field col s2   card-panel z-depth-5" id="divAjuda">
                         <form name="frAjuda" id="frAjuda">
-                            <h5 class="white-text"><b>Como podemos ajudar você?</b></h5>
-                            <input placeholder="Pesquise sua duvida aqui..." id="pesq" name="pesquajuda" type="text" size="1000" maxlength="50">
+                            <h5 class="black-text" id="ajuda1"  >
+                                Como podemos ajudar você?</h5>
+                            <input placeholder="Pesquise sua duvida aqui..." id="pesq1" name="pesquajuda" type="text" size="1000" maxlength="50">
+                            
                                 <button class=" pesqAjuda btn #00838f cyan darken-3" onclick="msgDuvida()" name="Pesqjuda" id="Pesqajuda">Pesquisar</button>
                         </form>
                     </div>
-               </div>
-            
+               
             </section>
-		
+		   
 		
 		  <div class="linksGerais white-text">
                 <div>
@@ -53,7 +116,7 @@
             <div class="linksForum">
                     
                 <div>
-                    <h5 class="white-text"><b>Forum</b></h5>
+                    <h5 class="black-text"><b>Fórum</b></h5>
                 </div>
                 <div id="msg"></div>
 		  </div>
