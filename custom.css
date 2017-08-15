@@ -1,356 +1,176 @@
 /* Definindo bg e fonte do site*/
 
 html {
-    font-family: monospace;
+    font-family: arial;
+    background-image:url("fotoFundao.jpg");
 }
 
 h1, h2, h3, h4, h4, p, a, input, placehorder {
-    font-family: monospace;
+    font-family: arial;
     color: black;
 }
-
-html {
-    background-color: white;
-}
-
-
 
 /* Cabeçalho styles*/
 
 .div1 {
     width: 100%;
-    height: 130px;
-    background-image:url("fundoVerde.jpg");
+    height: 15px;
+    background-image: url("TelaFundo.jpg");
     margin-top: 0%;
 }
-
 .div2 {
-    background-color: black;
-    font-family: italic;
-    font-size: 8px;
-    width: 70%;
-    float: right;
-}
-
-.entrar {
-    position: relative;
-    float: right;
-    rigth: -10%;
-    top: 15px;
-    width: px;
-    border-radius: 5em 5em 5em 5em;
-    font-size: 12px;
-}
-
-.absolute {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-}
-
-.pesquisar {
-    position: relative;
-    float: left;
-    right: -10%;
-    top: -90px;
-    left: 100px;
-    width: 30%;
-    height: auto;
-}
-#pesq{
-    position: absolute;
-    width: 15%;
-    height: 5%;
-    color: black;
-    top: 2%;
-    border-radius: 16px;
-    right: 4%;
-}
-#pesq1{
-    position: absolute;
-    width: 90%;
-    height: 15%;
-    color: black;
-    top: 5%;
-    left: 4%;
-    
-}
-
-#iconepesq{
-    position: absolute;
-    right: 2%;
-    top: 5%;    
-}
-#usuario{
-    position: absolute;
-    left: 1%;
-}
-#nomeusuario{
-    position: absolute;
-    left: 5%;
-    
-}
-footer {
-    margin: auto;
     width: 100%;
-    bottom: 0%;
-    height: 10%;
-    position: absolute;
+    height: 270px;
+    background-image:url(fotoHome4.jpg);
 }
 
-nav {
-    width: 100%;
-    position: absolute;
-    top: 60px;
-}
-#imagemfooter{
-    position: absolute;
-    top:145%;
-    left: 35%;
-}   
-#imagemfooter2{
-    position: absolute;
-    top:145%;
-    left: 52%;
-}   
-#imagemfooter3{
-    position: absolute;
-    top:145%;
-    left: 69%;
-}   
 
-
-/*AJUDA STYLES*/
-
-sectionAjuda {
-    margin: auto;
-    position: absolute;
-    width: 39%;
-}
-#ajuda2{
-    position: absolute;
-    width: 60%;
-}
-#Pesqajuda {
-    position: absolute;
-    top: 70%;
+#id-nav{
     width: 50%;
-    font-size: 12px;
-    left: 25%;
+    background-image: url(TelaFundo.jpg);
+
 }
 
-.linksGerais {
-    position: relative;
-    top: 80px;
-    width: 30%;
-    float: left;
-    height: auto;
-    margin-left: 20%;
+.divNav{
+    background-image: url(TelaFundo.jpg); 
+    margin-left: 10%;
 }
-
-.linksForum {
-    position: relative;
-    top: -250px;
-    width: 30%;
-    float: right;
-}
-
-.sectionAjuda {
-    left: -20%;
-    right: -20%;
-    width: 80%;
-}
-
-#frAjuda {
-    width: 100%;
-    height: 180px;
-}
-
-#divAjuda {
-    margin-left: 20%;
-    width: 39%;
-    background-color: #607d8b;
-    margin-top: 5%;
-    
-}
-#tituloajuda{
-    position: absolute;
-    left: 45%;
-    top: 18%;
-    color: black;
-    font-family: monospace;
-    font-size: 250%;
-}
-
-.btnLocal {
-    position: relative;
-    float: center;
-    width: px;
-    border-radius: 5em 5em 5em 5em;
-    font-size: 12px;
-}
-
-.divmaisProx {
-    position: relative;
-    float: ;
+nav {
     width: 70%;
+    position: absolute;
+    top: 100px;
+    right: 25%;
+}
+.titulos {
+    font-size: 28px;
+    font-family:"Dancing Script",cursive;
+    color: black;
+    margin: 0%;
+}
+ /* fIM  do Cabeçalho styles*/
+
+
+/* CORPO HOME styles*/
+.sectionMargem1{
+    width: 70%;
+    margin-left: 20%;
+    margin-right: -20%;
+    font-family: arial;
+}
+.sectionMargem{
+    width: 70%;
+    margin-left: 10%;
+    margin-right: -12%;
+    font-family: arial;
+}
+
+.sectionMargem2{
+    width: 70%;
+    margin-right: -12%;
+    font-family: arial;
+}
+.comofs{
+    background-image: url("TelaFundo.jpg");
+}
+
+
+.sectionMargem3{
+    width: 70%;
+    margin-left: 28%;
+    font-family: arial;
+}
+.sectionMargem4{
+    height: 60%;
+    font-family: arial;
+    border-radius: 50px;
+}
+.divProd2{ 
+ justify-content: space-around;
+    display: flex;
+    padding: 2%;
+    margin-bottom: 1%;
+    background-image: url(fotoFundao.jpg);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.comoFuncionaStyle{
+    font-family:arial;
+    font-size:20px;
+}
+
+#divComo{
+    width: 50%;
+    height: 50%;
+    margin-left: 26%;
+}
+#divComo1{
+    width: 70%;
+    height: 70%;
+    margin-left: 16%;
+}
+
+
+
+/* FIM CORPO styles*/
+
+/*PRODUTOS styles*/
+
+.divProd1{ 
+ justify-content: space-around;
+    display: flex;
+    padding: 2%;
+    margin-bottom: 1%;
+    background-image: url(fotoFundao.jpg);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.sectionMargemFiltroProdutos{
+    width: 70%;
+    margin-left:2%;
+    margin-right: -12%;
+    font-family: cursive;
+}
+#btnPROD{
+    float:left;
+}
+.divCategorias{
+    
+    width: 27%;
     height: 30%;
+    float:right;
 }
-
-
-/*SIDEBAR*/
-
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+#filtros{
+ position: absolute;
+    width: 50%;
+    height: 20%;
+    left: 10%;
 }
-
-#wrapper.toggled {
-    padding-left: 250px;
-}
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: absolute;
-    left: 250px;
-    width: 0;
-    height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    background: #000;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+input.inputsFiltros {
+    border: 1px solid;
+    border-radius: 150px;
+    border-color: dimgray;
+    padding: 2px 10px;
+    margin: 10px;
+    font-size: 16px;
+    transition: .25s;
+    margin-left: 0px;
+    color: black;
     
 }
 
-#wrapper.toggled #sidebar-wrapper {
-    width: 270px;
-}
-
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
-}
-
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-}
-
-#sidebar-wrapper i.material-icons.right {
-    margin-top: 12px;
-    
-    font-size: 8px;
-}
-
-#btn-sidebar {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#btn-sidebar.toggled {
-    
-}
-
-
-/* Sidebar Styles */
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999999;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav>.sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
-}
-
-.sidebar-nav>.sidebar-brand a {
-    color: #999999;
-}
-
-.sidebar-nav>.sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-#user-name {
-    font-size: 12px;
-    display: block;
-    line-height: 3.1;
-}
-
-search-field {
-    padding: 10px;
-}
+/* FIM PRODUTOS styles*/
 
 
 /*CADASTRO STYLES*/
-
-#icone {
-    cursor: pointer;
-    padding: 15px;
-    position: absolute;
-    z-index: 1;
-}
-
 #cad {
     position: absolute;
     height: 100%;
-    left: 30%;
-}
-
-#cadPag {
-    position: absolute;
-    height: 5, 5%;
-    left: 30%;
-    background-color: fuchsia;
-}
-
-#cad2 {
-    position: absolute;
-    height: 100%;
-    left: 50%;
-    width: 20%;
+    left: 20%;
 }
 
 input.inputsCad {
     border: 1px solid;
-    border-radius: 2px;
+    border-radius: 150px;
     border-color: dimgray;
     padding: 2px 10px;
     margin: 10px;
@@ -361,7 +181,7 @@ input.inputsCad {
     
 }
 ::placeholder{
-    color: black;
+    color: grey;
 }
 
 #btnCad {
@@ -371,33 +191,6 @@ input.inputsCad {
 #btnAlt {
     left: -100%;
 }
-#eu{
-   height: 10%;
-    width: 150%;
-    
-}
-
-#btnExc {
-    left: 7%;
-    background-color: darkgrey;
-    top: 43%;
-    position: absolute;
-}
-
-.titulos {
-    font-size: 16px;
-    font-family: "Arial";
-    font-weight: bold;
-    color: black;
-    margin: 0%;
-}
-#logo{
-    position: absolute;
-    left: 45%;
-    height: 20%;
-    top: 0%;
-}
-
 
 #cad3 {
     position: absolute;
@@ -406,187 +199,9 @@ input.inputsCad {
     width: 20%;
 }
 
-#titulodapaginadecadastro {
-    font-size: 300%;
-    color: black;
-    text-align: center;
-}
-
-#meuPa {
-    color: black;
-}
-
-#ImgLinks {
-    top: 80px;
-}
-
-#naveg {
-    background-color: cadetblue;
-    width: 40%;
-    left: 30%;
-    height: 10%;
-    top: 10%;
-}
-#nomeevento{
-    position: absolute;
-    left: 23%;
-    
-}
-#configeventolocal{
-    position: absolute;
-    left: 25%;
-    top: 35%;
-    font-size: 25px;
-}
-#configeventolocal1{
-    position: absolute;
-    left: 32%;
-    top: 37%;
-    font-size: 20px;
-}
-#configeventodata{
-    position: absolute;
-    left: 25%;
-    top: 45%;
-    font-size: 25px;
-}
-#configeventodata1{
-    position: absolute;
-    left: 32%;
-    top: 47%;
-    font-size: 20px;
-}
-#configeventopreco{
-    position: absolute;
-    left: 25%;
-    top: 55%;
-    font-size: 25px;
-}
-#configeventopreco1{
-    position: absolute;
-    left: 33%;
-    top: 56%;
-    font-size: 20px;
-}
-
-#configeventodes{
-      position: absolute;
-    left: 25%;
-    top: 69%;
-    font-size: 25px;
-}
-#configeventodes1{
-      position: absolute;
-    left: 35%;
-    top: 69%;
-    font-size: 25px;
-}
-
-#cad4 {
-    /* id do div pras informaçoes do ingresso */
-    position: absolute;
-    height: 10%;
-    left: 0%;
-    width: 22%;
-    top: 26%;
-}
-
-#cad5 {
-    /* id do div pras informaçoes do ingresso, sobrenome */
-    position: absolute;
-    height: 20%;
-    left: 27%;
-    width: 22%;
-    top: 28%;
-}
-
-#cad6 {
-    /* configura o div do email da página pagamento de conta */
-    position: absolute;
-    width: 50%;
-    top: 40%;
-}
-
-p.titulodopagamento {
-    font-size: 150%;
-    left: 0%;
-    position: absolute;
-    top: 19%;
-}
-
-p.titulodopagamento1 {
-    font-size: 150%;
-    color: black;
-    top: 64%;
-    position: absolute;
-    left: 0%;
-}
-
-table {
-    border-color: aqua;
-}
-
-section {
-    width: 100%;
-    color: firebrick;
-}
-
-#pagamento {
-    width: 50%;
-    background-color: fuchsia;
-}
-
-#pagamento1 {
-    width: 50%;
-    background-color: forestgreen;
-}
-
-
-/* Não estavam funcionando esses aí de cima, tô renomeando nesses aqui de baixo. Qualquer coisa é só midificar */
-
-
-}
-.sectionPagamento {
-    width: 5%;
-    position: relative;
-    left: 40%;
-    top: 50%;
-    height: 1000%;
-}
-.sectionFrPagamento {
-    width: 100%;
-    position: absolute;
-    left: 0%;
-    top: 70%;
-}
-#idcartao {
-    width: 20%;
-    left: 0%;
-    position: absolute;
-    top: 75%;
-    background-color: #757575;
-    height: 18%;
-    border-radius: 3em 5em 3em 5em;
-}
-#idboleto {
-    width: 20%;
-    left: 20%;
-    position: absolute;
-    top: 75%;
-    background-color: #757575;
-    height: 18%;
-    border-radius: 3em 5em 3em 5em;
-}
-#frPagamento {
-    width: 20%;
-    position: absolute;
-    left 0%;
-    top: 230px;
-}
-
 /*INDEX STYLES IMAGENS*/
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 body {
     font-family: Verdana, sans-serif;
@@ -594,8 +209,7 @@ body {
 }
 .mySlides {
     display:none;
-    opacity: 0.9;
-    
+    height:400%;    
 }
 
 /* Slideshow container */
@@ -705,360 +319,6 @@ body {
     }
 }
 
-}
-div.infoingresso {
-    background-color:beige;
-    width: 100%;
-    height: 30%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-principal {
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-    
-}
-.conteudo {
-    background-color: transparent;
-    padding: 10px;
-    position: absolute;
-    bottom: 193px;
-    transition: all 0.5s ease;
-    left: 60%;
-    height: 100%;
-    width: 40%;
-    top: 25%;
-    color: transparent;
-}
-.conteudo h3 {
-    font-size: 190%;
-   
-}
-.principal:hover .conteudo {
-    background-color: transparent;
-    bottom: 0;
-    color: white;
-}
-#configinfoevento{
-    top: 17%;
-    left: 60%;
-    position: absolute;
-    
-    
-}
-#infoevento{
-    position: absolute;
-    top: 29%;
-}
-#configinfoevento1{
-    top: 5%;
-    left: 60%;
-    position: absolute;
-    font-size: 200%;
-}
-#descricaoevento{
-    position: absolute;
-   top: 60%;
-    left: 50%;
-}
-
-/* tá configurando o select de pagamento, a vista e juros */
-select.configuraselect {
-    width: 100%;
-}
-
-/* tá configurando o select pra saber qual o cartão */
-select.configuraselect1 {
-    width: 120%;
-}
-#configpagamento {
-    position: absolute;
-    top: 100%;
-}
-#configuracartaodecredito {
-    position: absolute;
-    left: 130%;
-    width: 80%;
-    top: 0%;
-}
-#configuranumcartao {
-    position: absolute;
-    left: 0%;
-    width: 80%;
-    top: 138%;
-}
-#configuradataexpedicao {
-    position: absolute;
-    left: 130%;
-    width: 80%;
-    top: 150%;
-}
-#configuradataexpedicao1 {
-    position: absolute;
-    left: 230%;
-    width: 60%;
-    top: 178%;
-}
-#configcodsegure {
-    position: absolute;
-    left: 0%;
-    width: 80%;
-    top: 286%;
-}
-p.titulodopagamento2 {
-    font-size: 150%;
-    color: black;
-    top: 400%;
-    position: absolute;
-    left: 0%;
-    width: 150%;
-}
-#confignometitular {
-    position: absolute;
-    left: 0%;
-    width: 280%;
-    top: 490%
-}
-#configdataNasc {
-    position: absolute;
-    left: 110%;
-    width: 80%;
-    top: 620%
-}
-#configCPFtitular {
-    position: absolute;
-    left: 0%;
-    width: 80%;
-    top: 620%
-}
-#configcelulartitular {
-    position: absolute;
-    left: 220%;
-    width: 80%;
-    top: 620%;
-}
-#configCEP {
-    position: absolute;
-    left: 0%;
-    width: 80%;
-    top: 730%;
-}
-#configqtdingresso {
-    position: absolute;
-    top: 10%;
-    width: 5%;
-    left: 30%;
-    height: 1%;
-}
-#confignomeboleto {
-    position: absolute;
-    left: 0%;
-    width: 210%;
-    top: 920%;
-}
-#titulodopagamento3 {
-    font-size: 150%;
-    color: white;
-    top: 840%;
-    position: absolute;
-    left: 0%;
-    width: 150%;
-}
-#configCPFboleto {
-     position: absolute;
-    left: 0%;
-    width: 80%;
-    top: 1040%;
-    
-}
-#configCEPboleto {
-    position: absolute;
-    left: 130%;
-    width: 80%;
-    top: 1040%;
-}
-#configbtncontinuar{
-    position: absolute;
-    top: 1200%;
-    left: 80%;
-}
-center{
-    color: black;
-    font-family: "Arial";
-    font-size: 130%;
-    
-}
-#titulodapaginateatro {
-    /* título da página de Teatro */
-    font-size: 350%;
-    color: black;
-    left: 38%;
-    top: 15%;
-    position: absolute;
-}
-#titulodapaginafesta {
-    /* título da página de Teatro */
-    font-size: 350%;
-    color: black;
-    left: 45%;
-    top: 15%;
-    position: absolute;
-}
-div.teatro1 {
-    position: absolute;
-    left: 0%;
-    height: 20%;
-    font-size: 90px;
-    top: 30%;
-    width: 100%;
-}
-
-div.teatro2 {
-    position: absolute;
-    left: 0%;
-    height: 20%;
-    font-size: 90px;
-    top: 51%;
-    width: 100%;
-}
-
-div.teatro3 {
-    position: absolute;
-    left: 0%;
-    height: 20%;
-    font-size: 90px;
-    top: 78%;
-    width: 100%;
-}
-
-div.cont {
-    height: 105%;
-    width: 28%;
-    top: 0%;
-    background-color: #4db6ac;
-    position: absolute;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #00838f;
-}
-
-div.cont1 {
-    height: 105%;
-    width: 28%;
-    top: 0%;
-    background-color:#4db6ac ;
-    position: absolute;
-    left: 35%;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #00838f;
-}
-
-div.cont2 {
-    height: 105%;
-    width: 28%;
-    top: 0%;
-    background-color: #4db6ac;
-    position: absolute;
-    left: 70%;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #00838f;
-}
-
-div.cont3 {
-    height: 105%;
-    width: 28%;
-    top: 0%;
-    background-color: #4db6ac;
-    position: absolute;
-    left: 75%;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #00838f;   
-}
-
-p.confignomepeca {
-    position: absolute;
-    font-family: "Arial";
-    font-size: 24%;
-    color: black;
-    font-weight: bold;
-    left: 35%;
-    top: -19%;
-    
-}
-
-i.iconedata {
-    position: absolute;
-    left: 35%;
-    top: 25%;
-    color: black;
-}
-p.nomedata {
-    position: absolute;
-    font-family: "Arial";
-    font-size: 20%;
-    color: black;
-    font-weight: bold;
-    left: 42%;
-    top: 10%;
-}
-
-i.iconehora {
-    position: absolute;
-    left: 70%;
-    top: 25%;
-    color: black;
-}
-
-p.nomehora {
-    position: absolute;
-    font-family: "Arial";
-    font-size: 20%;
-    color: black;
-    font-weight: bold;
-    left: 78%;
-    top: 10%;
-}
-
-i.iconelocal {
-    position: absolute;
-    left: 35%;
-    top: 50%;
-    color: black;
-}
-
-p.nomelocal {
-    position: absolute;
-    font-family: "Arial";
-    font-size: 20%;
-    color: black;
-    font-weight: bold;
-    left: 42%;
-    top: 37%;
-}
-
-a.compraingressonome {
-    position: absolute;
-    font-family: "Arial";
-    font-size: 24%;
-    color:#607d8b;
-    font-weight: bold;
-    left: 44%;
-    top: 78%;
-}
-img.configImg {
-    width: 35%;
-    height: 100%;
-    left: 0%;
-    top: 0%;
-    position: absolute;
-}
-
-
     .divSlide{
         height: 100px;
         width: 50%;
@@ -1162,220 +422,6 @@ img.configImg {
 @media only screen and (max-width: 400px) {
   .prev, .next,.text {font-size: 14px}
 }
-#titulodeeventodesejado{
-    font-size: 250%;
-    color: black;
-    left: 35%;
-    top: 15%;
-    position: absolute;
-}
-div.contEventoDesejado{
-    height: 90%;
-    width: 29%;
-    top: 10%;
-    left: 35%;
-    background-color: #4db6ac;
-    position: absolute;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #00838f;
-}
-div.contEventoDesejado2{
-    height: 90%;
-    width: 29%;
-    top: 120%;
-    left: 35%;
-    background-color: #4db6ac;
-    position: absolute;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #00838f;
-}
-div.contEventoDesejado3{
-    height: 90%;
-    width: 29%;
-    top: 230%;
-    left: 35%;
-    background-color: #4db6ac;
-    position: absolute;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #00838f;
-}
-div.contEventoDesejado4{
-    height: 90%;
-    width: 29%;
-    top: 290%;
-    left: 40%;
-    background-color: #4db6ac;
-    position: absolute;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: #00838f;
-}
-#coracao{
-    border-radius: 5em;
-    color: #00acc1 ;
-    top: 37%;
-    left: 70%;
-    position: absolute;
-
-}
-#coracao2{
-    border-radius: 5em;
-    color: #00acc1 ;
-    top: 60%;
-    left: 70%;
-    position: absolute;
-
-}
-#coracao3{
-    border-radius: 5em;
-    color: #00acc1 ;
-    top: 82%;
-    left: 70%;
-    position: absolute;
-
-}
-#coracao4{
-    border-radius: 5em;
-    color: #00acc1 ;
-    top: 85%;
-    left: 60%;
-    position: absolute;
-
-}
-/* Parei aqui */
-#cadLogin{
-   position: absolute;
-    left: 40%;
-    width: 20%;
-    top: 30%;
-}
-#titulodologin{
-    position: absolute;
-    left: 38%;
-    top: 20%;
-}
-#btnLogin{
-    position: absolute;
-    left: 30%;
-    top: 110%;
-}
-#configLogin{
-    position: absolute;
-    left: 5%;
-    top: 130%;
-    width: 110%;
-    font-size: 123%;
-    color: grey;
-}
-#configLogin2{
-    position: absolute;
-    left: 17%;
-    top: 160%;
-    width: 110%;
-    font-size: 123%;
-    color:darkgray;
-}
-.divIndex{
-    width: 100%;
-    height: 70%;
-   
-}
-#configIndex{
-    position: absolute;
-    left: 24%;
-    top: 27%;
-}
-#configIndex2{
-    position: absolute;
-    left: 40%;
-    
-}
-#iconeFace{
-    position: absolute;
-    top:145%;
-    left: 25%;
-    font-size: 100%;
-    color: white;
-}
-#semconteudo{
-    color:darkgray;
-    top: 30%;
-    position: absolute;
-    left: 20%;
-}
-#iconesemconteudo{
-    position: absolute;
-    top: 45%;
-    left: 45%;
-    height: 25%;
-    width: 15%;
-   
-}
-/*Teste*/
-.sectionPgInicial{
-		width:100%;
-		height:400px;
-		top: -50px;
-}
-#w3-display-container{
-top:09px;
-width:80%;
-height:400%;
-}
-
-#divQuemsomos1{
-	width:50%;
-	height:18.5%;
-    background-image:url(fundo.jpg);
-    position: absolute;
-    text-align: center;
-    
-
-}
-#boleto1{
-    position: absolute;
-    top: 40%;
-    left: 35%;
-}
-#tituloformadepagamento{
-    position: absolute;
-    left: 37%;
-    font-size: 180%;
-    font-family:monospace;
-    top: 5%;
-}
-#titulocontato1{
-    position: relative;
-    left: 0%;
-    font-size: 180%;
-    font-family:monospace;
-    top: 5%; 
-}
-h3.tt{
-    position: absolute;
-    left: 75%;
-    font-size: 180%;
-    font-family:monospace;
-    top: 148%; 
-}
-#email1{
-     position: absolute;
-    left: 75%;
-    font-size: 140%;
-    font-family:monospace;
-    top: 150%;
-}
-#email2{
-     position: absolute;
-    left: 75%;
-    font-size: 140%;
-    font-family:monospace;
-    top: 155%;
-}
-
 #ajuda1{
     position: absolute;
     top: 30%;
@@ -1397,3 +443,8 @@ h3.tt{
     font-size: 14px;
     background-color: #00695c;
 }
+/* Definindo bg e fonte do site*/
+
+
+
+
